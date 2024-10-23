@@ -11,7 +11,7 @@ class CrudController extends Controller
     public function index()
     {
         Session::put('page','crud');
-        $title = "Backup and Export";
+        $title = "CRUD Generation dynamically";
         return view('admin.crud')->with(compact('title'));
     }
 }
